@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "779957515122",
+    "project_id": "insta-fire-420c1",
+    "storage_bucket": "insta-fire-420c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779957515122:android:9538c54efdca07fe9d23eb",
+        "android_client_info": {
+          "package_name": "com.sumeet.insta_fire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779957515122-imakuh8mp2deaspb282fjof0jf2lqmev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sumeet.insta_fire",
+            "certificate_hash": "d94665413f660c97642db3b15a32e19fa835f13e"
+          }
+        },
+        {
+          "client_id": "779957515122-1rj3fspc5biel7t8ps428790nddb3a87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYESfVDRzKsNEqMkqDu7Wdbpzkl47_gPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779957515122-1rj3fspc5biel7t8ps428790nddb3a87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

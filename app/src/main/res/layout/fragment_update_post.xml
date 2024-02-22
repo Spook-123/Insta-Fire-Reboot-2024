@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/milkColor"
+    tools:context=".activities.PostActivity">
+
+    <Button
+        android:id="@+id/btnChooseImageUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="12dp"
+        android:text="Choose Image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivUploadUpdate"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/round_shape"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnChooseImageUpdate"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/etDescriptionUpdate"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_shape"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@id/ivUploadUpdate"
+        app:layout_constraintStart_toStartOf="@id/ivUploadUpdate"
+        app:layout_constraintTop_toBottomOf="@id/ivUploadUpdate"
+        tools:text="Good" />
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@id/etDescriptionUpdate"
+        app:layout_constraintStart_toStartOf="@id/etDescriptionUpdate"
+        app:layout_constraintTop_toBottomOf="@id/etDescriptionUpdate" />
+
+    <ProgressBar
+        android:id="@+id/proBarUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/ivUploadUpdate"
+        app:layout_constraintLeft_toLeftOf="@id/ivUploadUpdate"
+        app:layout_constraintRight_toRightOf="@id/ivUploadUpdate"
+        app:layout_constraintTop_toTopOf="@id/ivUploadUpdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

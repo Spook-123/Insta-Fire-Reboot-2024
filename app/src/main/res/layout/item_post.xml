@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="5dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/milkColor"
+        android:padding="16dp">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/circle_background"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="273dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:textColor="#212121"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/ivProfileImage"
+            app:layout_constraintRight_toLeftOf="@id/ivEdit"
+            app:layout_constraintTop_toTopOf="@id/ivProfileImage" />
+
+        <TextView
+            android:id="@+id/tvCreatedAt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="12dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@id/ivProfileImage"
+            app:layout_constraintRight_toLeftOf="@id/ivEdit"
+            app:layout_constraintTop_toBottomOf="@id/tvUserName" />
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_edit_24"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/ivImageUploaded"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            />
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/ivImageUploaded"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@id/tvDescription"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCreatedAt"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/ivLikeButton"
+            app:layout_constraintStart_toStartOf="@id/ivImageUploaded"
+            app:layout_constraintEnd_toEndOf="@id/ivImageUploaded"
+            app:layout_constraintTop_toBottomOf="@id/ivImageUploaded"
+            tools:text="Post Description" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/ivLikeButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="@id/tvDescription"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+        <TextView
+            android:id="@+id/tvLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintBottom_toBottomOf="@id/ivLikeButton"
+            app:layout_constraintLeft_toRightOf="@id/ivLikeButton"
+            app:layout_constraintTop_toTopOf="@id/ivLikeButton" />
+
+        <TextView
+            android:id="@+id/tvEdited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/ivDelete"
+            android:textSize="20sp"
+            tools:text = "Edited"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="50dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
